@@ -2,8 +2,8 @@ import { Box } from '@mantine/core';
 import React from 'react';
 
 const margins = {
-	left: { marginRight: '30vw' },
-	right: { marginLeft: '30vw' },
+	left: { marginRight: '30vw', marginLeft: '5vw' },
+	right: { marginLeft: '30vw', marginRight: '5vw' },
 };
 
 export default function Page({ sx, position = undefined, ...rest }) {

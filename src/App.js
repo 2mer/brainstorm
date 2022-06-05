@@ -7,7 +7,6 @@ import {
 	Header,
 	Image,
 	MediaQuery,
-	Navbar,
 	Stack,
 	Text,
 	useMantineTheme,

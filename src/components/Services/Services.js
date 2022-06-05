@@ -1,17 +1,19 @@
-import { Box, Grid, Group, Image, Stack, Text, Title } from '@mantine/core';
+import { Grid, Group, Image, Stack, Text, Title } from '@mantine/core';
 import React from 'react';
 import services from '../../data/services';
 
 export default function Services() {
 	return (
-		<Stack>
-			<Title>Our Services</Title>
-			<Text>
-				We have ready-to-use services enabled with minimal effort. Let
-				us think for you.
-			</Text>
+		<Stack spacing='3rem'>
+			<Stack spacing='sm'>
+				<Title>Our Services</Title>
+				<Text>
+					We have ready-to-use services enabled with minimal effort.
+					Let us think for you.
+				</Text>
+			</Stack>
 
-			<Grid columns={2}>
+			<Grid columns={2} gutter='xl'>
 				{Object.values(services).map((service) => {
 					return (
 						<Grid.Col span={1} key={service.name}>
