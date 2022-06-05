@@ -1,8 +1,6 @@
 import {
-	ContactShadows,
 	Environment,
 	Float,
-	Html,
 	Scroll,
 	ScrollControls,
 	useScroll,
