@@ -1,4 +1,4 @@
-import { Grid, Group, Image, Stack, Text, Title } from '@mantine/core';
+import { Box, Grid, Group, Stack, Text, Title } from '@mantine/core';
 import React from 'react';
 import services from '../../data/services';
 
@@ -18,11 +18,21 @@ export default function Services() {
 					return (
 						<Grid.Col span={1} key={service.name}>
 							<Group noWrap align='start'>
-								<Image
+								{/* <Image
 									width='100px'
 									height='100px'
 									src={service.icon}
 									withPlaceholder
+								/> */}
+								<Box
+									sx={{
+										width: '100px',
+										height: '100px',
+										mask: `url(${service.icon})`,
+										backgroundColor: 'black',
+										flexShrink: 0,
+										maskSize: 'contain',
+									}}
 								/>
 								<Stack>
 									<Title order={3}>{service.name}</Title>

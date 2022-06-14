@@ -72,8 +72,8 @@ function App() {
 								{/* title */}
 								<Image
 									// src='singularity_simplified.svg'
-									src='singularity.svg'
-									width='40px'
+									src='images/brainstorm.svg'
+									width='26px'
 								/>
 								<Text pl='1rem' size='xl'>
 									BRAINSTORM
